@@ -1,0 +1,54 @@
+.navi {
+ font-family: Arial;
+ font-size: 18pt;
+ text-align: center;
+ color: #FFFFFF;
+}
+
+.text {
+ font-family: Arial;
+ font-size: 12pt;
+ color: #000000;
+}
+
+.fueh {
+ font-family: Arial;
+ font-size: 12pt;
+ color: #ffffff;
+}
+
+a:link {
+ font-family: Arial;
+ text-decoration: underline;
+ font-size: 12pt;
+ color: blue;
+}
+a:visited {
+ font-family: Arial;
+ text-decoration: underline;
+ font-size: 12pt;
+ color: #60641F;
+}
+
+a:hover {
+ font-family: Arial;
+ text-decoration: underline;
+ font-size: 12pt;
+ color: red;
+}
+
+.uber {
+ font-family: Arial;
+ font-size: 24pt;
+ text-align: center;
+ font-weight: bold;
+  color: #ffffff;
+}
+.uber2 {
+ font-family: Arial;
+ font-size: 24pt;
+ text-align: center;
+ font-weight: bold;
+  color: #656565;
+}
+
