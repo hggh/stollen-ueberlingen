@@ -52,3 +52,66 @@ a:hover {
   color: #656565;
 }
 
+#overlay {
+	position: fixed;
+	z-index:  199;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+a.tooltip {
+	font-style:italic;
+}
+
+a.tooltip span {display:none; padding:2px 3px; margin-left:8px; 
+	min-width: 130px;
+	text-decoration: none;
+	font-style: normal;
+	color: black;
+	}
+
+a.tooltip:link span {
+	text-decoration: none;
+}
+
+a.tooltip:hover span {
+	display:inline;
+	position:absolute;
+	border:1px solid #cccccc;
+	background: #ffffff;
+	text-decoration: none;
+	}
+a.tooltip:visited span {
+	text-decoration: none;
+}
+
+
+
+.overlayBG {
+	background-color:#000;
+	-ms-filter: "Alpha(Opacity=75)"; /* IE 8 */
+	filter:alpha(opacity=75); /* IE5-7 */
+	-moz-opacity: 0.75; /* Mozilla */
+	opacity: 0.75;
+}
+
+#lightBox {
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-100px;
+	margin-top:-100px;
+	z-index:200;
+	width:200px;
+	height:200px;
+	background-color:#fff;
+	text-align:center;
+}
+* html #lightBox { /* ie6 hack */
+	position: absolute;
+	margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+
