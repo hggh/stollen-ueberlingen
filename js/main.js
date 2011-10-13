@@ -10,7 +10,12 @@ $(document).ready( function(){
 	$('.tooltip').click(function() {
 		$('#overlay').show();
 		var load_document =  $(this).attr('data-file');
-		$("#lightBox").load(load_document);
+		$("#lightBoxInner").load(load_document);
 		$("#lightBox").show();
+	});
+
+	$('#lightBoxClose').click(function() {
+		$("#lightBox").hide();
+		$('#overlay').hide();
 	});
 });
