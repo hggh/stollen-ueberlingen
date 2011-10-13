@@ -3,39 +3,69 @@
 <title>Navigation von Stollen im Internet</title>
 <meta name="author" content="Projektgruppe von der Realschule &Uuml;berlingen">
 <meta name="generator" content="Ulli Meybohms HTML EDITOR">
+<link rel="stylesheet" href="navi.css" type="text/css" />
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
 </head>
 <body  bgcolor="#656565" link="#FFffff" alink="#FFffff" vlink="#FFffff">
 <center>
-<font face="Arial" size="3" color="ffffff">
+<font face="Arial" size="3" style="color:#ffffff;">
 
-<a OnMouseOver="status='Zielsetzung des Projekts';return true;" OnMouseOut="status='';return true;" href="./ziel/ziel.htm" target="Haupt">Zielsetzung</a>
+<a class="nav-main-link" OnMouseOver="status='Zielsetzung des Projekts';return true;" OnMouseOut="status='';return true;" href="./ziel/ziel.htm" target="Haupt">Zielsetzung</a>
 <p>
-<a OnMouseOver="status='Aktuelles &uuml;ber den Stollen.';return true;" OnMouseOut="status='';return true;" href="./news.htm" target="Haupt">Aktuelles</a>
+<a class="nav-main-link" OnMouseOver="status='Aktuelles &uuml;ber den Stollen.';return true;" OnMouseOut="status='';return true;" href="./news.htm" target="Haupt">Aktuelles</a>
 <p>
-<a OnMouseOver="status='Alles &uuml;ber den &Uuml;berlinger Stollen.';return true;" OnMouseOut="status='';return true;" href="./infos/infos.htm" target="Haupt">Kurzinfo</a>
+<a class="nav-main-link" OnMouseOver="status='Alles &uuml;ber den &Uuml;berlinger Stollen.';return true;" OnMouseOut="status='';return true;" href="./infos/infos.htm" target="Haupt">Kurzinfo</a>
 <p>
-<a OnMouseOver="status='Die Geschichte vom Bau bis heute.';return true;" OnMouseOut="status='';return true;" href="./geschichte/geschichte.htm" target="Haupt">Geschichte</a>
+<a class="nav-main-link" OnMouseOver="status='Die Geschichte vom Bau bis heute.';return true;" OnMouseOut="status='';return true;" href="./geschichte/geschichte.htm" target="Haupt">Geschichte</a>
 <p>
-<a OnMouseOver="status='Rundgang um den Stollen';return true;" OnMouseOut="status='';return true;" href="./rundgang/rundgang.htm" target="Haupt">Rundgang um den Stollen</a>
+<a class="nav-main-link" data-nav="nav-more-rundgang-um-den-stollen" OnMouseOver="status='Rundgang um den Stollen';return true;" OnMouseOut="status='';return true;" href="./rundgang/rundgang.htm" target="Haupt">Rundgang um den Stollen</a>
+<div class="nav-link-more" id="nav-more-rundgang-um-den-stollen">
+<ol>
+	<li><a href="rundgang/krankenhaus/kz_lager.htm" target="Haupt" >Arbeitslager</a></li>
+	<li><a href="rundgang/krankenhaus/index1.htm" target="Haupt">Gedenkst&auml;tte H&auml;rlen</a></li>
+	<li><a href="rundgang/eingang/zeltplatz/zelt.htm" target="Haupt" >Campingpark &Uuml;berlingen</a></li>
+	<li><a href="rundgang/eingang/alt_eingang/rund.htm" target="Haupt" >Fr&uuml;here Eing&auml;nge</a></li>
+	<li><a href="rundgang/eingang/gedenk/gedenk.htm" target="Haupt" >Gedenkst&auml;tte</a></li>
+	<li><a href="rundgang/eingang/heute/index.htm" target="Haupt" >Heutiger Eingang</a></li>
+<ol>
+</div>
 <p>
-<a OnMouseOver="status='Rundgang im Stollen';return true;" OnMouseOut="status='';return true;" href="./inrund/inrund.htm" target="Haupt">Rundgang im Stollen</a>
+<a class="nav-main-link" data-nav="nav-more-rundgang-im-stollen" OnMouseOver="status='Rundgang im Stollen';return true;" OnMouseOut="status='';return true;" href="./inrund/inrund.htm" target="Haupt">Rundgang im Stollen</a>
+<div class="nav-link-more" id="nav-more-rundgang-im-stollen">
+<ol>
+	<li><a href="inrund/inrund.htm" target="Haupt" >Eingang</a></li>
+	<li><a href="inrund/gang_1.htm" target="Haupt" >Gang 1</a></li>
+	<li><a href="inrund/zeppelin.htm" target="Haupt" >Graf von Zeppelin</a></li>
+	<li><a href="inrund/gang_2.htm" target="Haupt" >Gang 2</a></li>
+	<li><a href="inrund/zeppelin2.htm" target="Haupt" >Zeppelin</a></li>
+	<li><a href="inrund/gang_3.htm" target="Haupt" >Gang 3</a></li>
+	<li><a href="inrund/fn.htm" target="Haupt" >Friedrichshafen</a></li>
+	<li><a href="inrund/gang_4.htm" target="Haupt" >Gang 4</a></li>
+	<li><a href="inrund/lore.htm" target="Haupt" >H&auml;ftlinge</a></li>
+	<li><a href="inrund/gang_5.html" target="Haupt" >Gang 5</a></li>
+	<li><a href="inrund/arbeits.html" target="Haupt" >KZ-H&auml;ftlinge</a></li>
+	<li><a href="inrund/gang_6.htm" target="Haupt" >Fensterstollen</a></li>
+<ol>
+</div>
 <p>
-<a OnMouseOver="status='Fluchtversuche';return true;" OnMouseOut="status='';return true;" href="./fluchtversuche/flucht.htm" target="Haupt">Fluchtversuche</a>
+<a class="nav-main-link" OnMouseOver="status='Fluchtversuche';return true;" OnMouseOut="status='';return true;" href="./fluchtversuche/flucht.htm" target="Haupt">Fluchtversuche</a>
 
 
 <p>
-<a OnMouseOver="status='Dem Ende entgegen';return true;" OnMouseOut="status='';return true;" href="./demendeentgegen/index.htm" target="Haupt">Dem Ende entgegen</a>
+<a class="nav-main-link" OnMouseOver="status='Dem Ende entgegen';return true;" OnMouseOut="status='';return true;" href="./demendeentgegen/index.htm" target="Haupt">Dem Ende entgegen</a>
 
 
 <p>
-<a OnMouseOver="status='Nach dem Krieg.';return true;" OnMouseOut="status='';return true;" href="./krieg/krieg.htm" target="Haupt">Nach dem Krieg</a>
+<a class="nav-main-link" OnMouseOver="status='Nach dem Krieg.';return true;" OnMouseOut="status='';return true;" href="./krieg/krieg.htm" target="Haupt">Nach dem Krieg</a>
 
 <p>
-<a OnMouseOver="status='F&uuml;hrungen durch den Stollen. Hier gibt es Anmeldeformulare';return true;" OnMouseOut="status='';return true;" href="./fuehrung/fuehrung2.htm" target="Haupt">F&uuml;hrungen</a>
+<a class="nav-main-link" OnMouseOver="status='F&uuml;hrungen durch den Stollen. Hier gibt es Anmeldeformulare';return true;" OnMouseOut="status='';return true;" href="./fuehrung/fuehrung2.htm" target="Haupt">F&uuml;hrungen</a>
 <p>
-<a OnMouseOver="status='Zuschuss vom Land.';return true;" OnMouseOut="status='';return true;" href="./zuschuss.htm" target="Haupt">Zuschuss</a>
+<a class="nav-main-link" OnMouseOver="status='Zuschuss vom Land.';return true;" OnMouseOut="status='';return true;" href="./zuschuss.htm" target="Haupt">Zuschuss</a>
 <p>
-<a OnMouseOver="status='Impressum';return true;" OnMouseOut="status='';return true;" href="./impressum.htm" target="Haupt">Impressum</a>
+<a class="nav-main-link" OnMouseOver="status='Impressum';return true;" OnMouseOut="status='';return true;" href="./impressum.htm" target="Haupt">Impressum</a>
 <p>
 </center>
 </font>

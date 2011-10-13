@@ -18,4 +18,12 @@ $(document).ready( function(){
 		$("#lightBox").hide();
 		$('#overlay').hide();
 	});
+
+	$('.nav-main-link').click(function() {
+		$('.nav-link-more').fadeOut('slow');
+		if ( $(this).attr('data-nav') && $(this).attr('data-nav').length > 4 ) {
+			$('#' + $(this).attr('data-nav')).fadeIn('slow');
+		}
+	});
+
 });

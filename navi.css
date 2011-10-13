@@ -1,0 +1,29 @@
+
+.nav-link-more {
+	margin-top: 1px;
+	font-size: 10pt;
+	color: #ffffff;
+	text-align: left;
+	display: none;
+}
+
+.nav-link-more ol {
+	margin: 1px;
+}
+
+.nav-link-more li {
+	margin: 1px;
+}
+
+.nav-link-more a {
+	text-decoration: underline;
+}
+
+.nav-link-more a:visited {
+	text-decoration: underline;
+}
+
+.nav-link-more a:hover {
+	text-decoration: underline;
+	color: red;
+}
