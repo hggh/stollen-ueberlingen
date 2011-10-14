@@ -65,12 +65,15 @@ a.tooltip {
 	font-style:italic;
 }
 
-a.tooltip span {display:none; padding:2px 3px; margin-left:8px; 
+a.tooltip span {
+	display:none;
+	padding:2px 3px;
+	margin-left:8px;
 	min-width: 130px;
 	text-decoration: none;
 	font-style: normal;
 	color: black;
-	}
+}
 
 a.tooltip:link span {
 	text-decoration: none;
@@ -82,7 +85,8 @@ a.tooltip:hover span {
 	border:1px solid #cccccc;
 	background: #ffffff;
 	text-decoration: none;
-	}
+}
+
 a.tooltip:visited span {
 	text-decoration: none;
 }
@@ -102,7 +106,7 @@ a.tooltip:visited span {
 	left: 20%;
 	right: 20%;
 	margin-left:-100px;
-	margin-top: 10%;
+	margin-top: 1%;
 	z-index:200;
 	width: 80%;
 	min-height:200px;
@@ -111,7 +115,10 @@ a.tooltip:visited span {
 }
 
 #lightBoxInner {
-	padding: 40px;
+	padding-top:   20px;
+	padding-left:  10px;
+	padding-right: 10px;
+	padding-bottom:20px;
 }
 
 #lightBoxClose {
