@@ -132,3 +132,12 @@ a.tooltip:visited span {
 }
 
 
+.hr-new {
+	margin-right: 60px;
+	margin-left:  60px;
+	margin-top:   20px;
+	margin-bottom:   20px;
+	color:  #888888;
+	background-color:  #888888;
+	height: 3px;
+}
