@@ -52,6 +52,17 @@ a:hover {
   color: #656565;
 }
 
+.ueber3 {
+ font-family: Arial;
+ font-size: 16pt;
+ padding-left: 1px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ text-align: left;
+ font-weight: bold;
+  color: #656565;
+}
+
 #overlay {
 	position: fixed;
 	z-index:  199;
