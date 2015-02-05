@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+if [ -z "$STUEB_FTP_USER" ]; then
+	echo "Please set ENV for username and password:"
+	echo "export STUEB_FTP_USER=''"
+	echo "export STUEB_FTP_PASS=''"
+	exit 1
+fi
+
+if [ ! -x /usr/bin/lftp ]; then
+	echo "Please install lftp"
+	exit 1
+fi
+
+echo "
+mirror --continue --reverse htdocs/ /
+quit
+" | lftp -u $STUEB_FTP_USER,$STUEB_FTP_PASS sftp://www.stollen-ueberlingen.de
