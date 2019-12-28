@@ -16,4 +16,4 @@ fi
 echo "
 mirror --continue --reverse htdocs/ /
 quit
-" | lftp -u $STUEB_FTP_USER,$STUEB_FTP_PASS sftp://www.stollen-ueberlingen.de
+" | lftp -u $STUEB_FTP_USER,$STUEB_FTP_PASS sftp://home29805387.1and1-data.host
