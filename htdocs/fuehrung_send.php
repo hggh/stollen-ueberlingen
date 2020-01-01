@@ -39,7 +39,7 @@ if (isset($_POST['senden']))
 	mail("we-bux@t-online.de", "Stollen-ueberlingen.de: Anmeldung zur Fuehrung", $text,
 	"From: $sender\r\n" .  "Reply-To: $sender\r\n" .  "X-Mailer: PHP/sto-ueb");
 
-	echo "Vielen Dank für Ihre Anmeldung.\nKlicken Sie <a href=\"http://www.stollen-ueberlingen.de/haupt.htm\">hier</a> um auf die Hauptseite zu kommen.";
+	echo "Vielen Dank - wir haben Ihre Anfrage erhalten.";
 
 	
 }
