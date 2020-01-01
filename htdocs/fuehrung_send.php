@@ -22,7 +22,7 @@ if (isset($_POST['senden']))
 		exit();
 	}
 	$footer="------------\nAnmeldungsmanager fuer Stollen-Ueberlingen.de";
-	$text=sprintf("Gruppenname: %s\nGruppenleiter: %s\nE-Mail: %s\nTelefon: %s\nTeilnehmer: %s\nGewuenschtes Datum: %s\nUhrzeit: %s\nAlternatives Datum: %s\nAnmkerungen: %s\n%s",
+	$text=sprintf("Gruppenname: %s\nGruppenleiter: %s\nE-Mail: %s\nTelefon: %s\nTeilnehmer: %s\nGewuenschtes Datum: %s (JJJJ-MM-TT)\nUhrzeit: %s\nAlternatives Datum: %s (JJJJ-MM-TT)\nAnmkerungen: %s\n%s",
 	$_POST['Gruppenname'],
 	$_POST['Gruppenleiter'],
 	$_POST['E-Mail'],
