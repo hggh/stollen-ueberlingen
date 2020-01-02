@@ -1,0 +1,22 @@
+name: upload homepage
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install lftp for uploading
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y lftp openssh-client
+        mkdir ~/.ssh
+        ssh-keyscan home29805387.1and1-data.host > ~/.ssh/known_hosts
+    - name: upload files
+      env:
+        STUEB_FTP_USER: ${{ secrets.STUEB_FTP_USER }}
+        STUEB_FTP_PASS: ${{ secrets.STUEB_FTP_PASS }}
+      run: bash bin/sync
