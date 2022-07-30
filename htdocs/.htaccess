@@ -1,3 +1,4 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://stollen-ueberlingen.de/$1 [R=301,L]
+RewriteRule /short /short.html 
